@@ -5,10 +5,10 @@ import os
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-STOCK_API =  "6X9IM1T53IT1J174"
-NEWS_API = "2e1b491ac27d404a8edeac63ca75030f"
-ACCOUNT_SID = "ACbd51f52e65e53d01547de54aa805cfc2"
-ACCESS_TOKEN = "7f5a93b16bc459149ac4e019fa19efdf"
+STOCK_API =  os.environ.get("STOCK_API_KEY")
+NEWS_API =  os.environ.get("NEWS_API_KEY")
+ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID")
+ACCESS_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
